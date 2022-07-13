@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+	<title>receiver_data</title>
+</head>
+		<body>
+			<div class="container">
+				<div class="card">
+					<div class="card-header">
+						<h3 class="lead"> sms test</h3>
+					</div>
+					<div class="card-body">
+						<form method="POST" action="http://localhost:5000/receiver_details">
+							<div class="mb-3">
+							<label class="form-label" for="to">number</label>
+							<input type="text" class="form-control" id="to" name="to" required></input>
+						</div>
+						<div class="mb-3">
+							<label for="message" class="form-label">Message</label>
+							<input type="text" class="form-control" id="message" name="message" required></input>
+						</div>
+						<button type="submit" class="btn btn-primary form-control">submit</button>
+						</form>
+						<div class="card-footer">
+							<p>the number is {{to}}</p>
+							<p>the message is {{message}}</p>
+						</div>
+						</div>
+						</div>
+						
+						
+					</div>
+		</body>
+					</html>
